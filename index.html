@@ -301,119 +301,156 @@
           </video> -->
         </div>
       </div>
-      <!--/ Visual Effects. -->
+    </div>
+</section>
 
-      <!-- Matting. -->
-      <div class="column">
-        <h2 class="title is-3">Section 2</h2>
-        <div class="columns is-centered">
-          <div class="column content">
-            <p>
-              Text...
-            </p>
-            <!-- <video id="matting-video" controls playsinline height="100%">
-              <source src="./static/videos/matting.mp4"
-                      type="video/mp4">
-            </video> -->
-          </div>
 
-        </div>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Environment Design</h2>
+    <div class="content has-text-justified">
+      <p>
+        The <strong>Sari Sandbox</strong> environment features three store layouts with randomized item placement. It includes over 250 interactive high-fidelity grocery products across shelves, freezers, and checkout counters. This design enables training and evaluation of agents in diverse, high-fidelity conditions.
+      </p>
+    </div>
+    <div class="columns is-multiline is-centered">
+      <div class="column is-half">
+        <figure class="image">
+          <img src="./static/images/figure_5_page5_0.png" alt="Environment layout 1">
+        </figure>
+      </div>
+      <div class="column is-half">
+        <figure class="image">
+          <img src="./static/images/figure_5_page5_1.png" alt="Environment layout 2">
+        </figure>
       </div>
     </div>
-    <!--/ Matting. -->
-
-    <!-- Animation. -->
-    <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Wide Section 3</h2>
-
-        <!-- Interpolating. -->
-        <h3 class="title is-4">Subsection 1</h3>
-        <div class="content has-text-justified">
-          <p>
-            Text...
-          </p>
-        </div>
-        <!-- <div class="columns is-vcentered interpolation-panel">
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_start.jpg"
-                 class="interpolation-image"
-                 alt="Interpolate start reference image."/>
-            <p>Start Frame</p>
-          </div>
-          <div class="column interpolation-video-column">
-            <div id="interpolation-image-wrapper">
-              Loading...
-            </div>
-            <input class="slider is-fullwidth is-large is-info"
-                   id="interpolation-slider"
-                   step="1" min="0" max="100" value="0" type="range">
-          </div>
-          <div class="column is-3 has-text-centered">
-            <img src="./static/images/interpolate_end.jpg"
-                 class="interpolation-image"
-                 alt="Interpolation end reference image."/>
-            <p class="is-bold">End Frame</p>
-          </div>
-        </div> -->
-        <br/>
-        <!--/ Interpolating. -->
-
-        <!-- Re-rendering. -->
-        <h3 class="title is-4">Subsection 2</h3>
-        <div class="content has-text-justified">
-          <p>
-            Text...
-          </p>
-        </div>
-        <div class="content has-text-centered">
-          <!-- <video id="replay-video"
-                 controls
-                 muted
-                 preload
-                 playsinline
-                 width="75%">
-            <source src="./static/videos/replay.mp4"
-                    type="video/mp4">
-          </video> -->
-        </div>
-        <!--/ Re-rendering. -->
-
+    <div class="columns is-multiline is-centered">
+      <div class="column is-half">
+        <figure class="image">
+          <img src="./static/images/highFidelity1.png" alt="SariBench task flowchart 1">
+        </figure>
+      </div>
+      <div class="column is-half">
+        <figure class="image">
+          <img src="./static/images/highFidelity2.png" alt="SariBench task flowchart 2">
+        </figure>
       </div>
     </div>
-    <!--/ Animation. -->
-
-
-    <!-- Concurrent Work. -->
-    <!-- If we had follow-ups or related works as a lab, they would go here. -->
-    <!-- <div class="columns is-centered">
-      <div class="column is-full-width">
-        <h2 class="title is-3">Related Links</h2>
-
-        <div class="content has-text-justified">
-          <p>
-            There's a lot of excellent work that was introduced around the same time as ours.
-          </p>
-          <p>
-            <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an idea similar to our windowed position encoding for coarse-to-fine optimization.
-          </p>
-          <p>
-            <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-            both use deformation fields to model non-rigid scenes.
-          </p>
-          <p>
-            Some works model videos with a NeRF by directly modulating the density, such as <a href="https://video-nerf.github.io/">Video-NeRF</a>, <a href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a href="https://neural-3d-video.github.io/">DyNeRF</a>
-          </p>
-          <p>
-            There are probably many more by the time you are reading this. Check out <a href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-          </p>
-        </div>
-      </div>
-    </div> -->
-    <!--/ Concurrent Work. -->
-
   </div>
 </section>
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">SariBench</h2>
+    <div class="content has-text-justified">
+      <p>
+        <strong>SariBench</strong> is a dataset and benchmark suite designed to evaluate both human and agent performance on shopping-related tasks. It spans 3 core task types (availability, location, pricing) and includes intermediate and hard tasks requiring manipulation, reasoning, and product comparison.
+      </p>
+    </div>
+    <div class="table-container">
+      <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>Difficulty</th>
+            <th>Skills Involved</th>
+            <th>Example Task</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Easy</td>
+            <td>Perception, Navigation, Manipulation</td>
+            <td>Find and pick up a box of cereal.</td>
+          </tr>
+          <tr>
+            <td>Average</td>
+            <td>Perception, Navigation, Manipulation, Memory, Task Execution</td>
+            <td>Pick up a bottle of soda and scan at checkout.</td>
+          </tr>
+          <tr>
+            <td>Difficult</td>
+            <td>Perception, Navigation, Manipulation, Memory, Task Execution, Decision Making, Comprehension</td>
+            <td>Which of these two products has lower sugar content: strawberry-flavored biscuit or chocolate-flavored biscuit? Scan the answer.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">VR Playground</h2>
+    <div class="content has-text-justified">
+      <p>
+        Human participants interact with the environment using VR controllers to grab, inspect, and scan products. This enables fine-grained benchmarking of human behavior in embodied tasks.
+      </p>
+    </div>
+    <div class="columns is-multiline is-centered">
+      <div class="column is-two-thirds">
+        <figure class="image">
+          <img src="./static/images/figure_9_page6_0.png" alt="VR Participants">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Agent Architecture</h2>
+    <div class="content has-text-justified">
+      <p>
+        Our embodied agent is composed of three main modules: a Vision Language Model (VLM)-based captioner, a planner that converts high-level goals into structured steps, and a decider that maps these into low-level actions. This architecture supports semantic navigation, object interaction, and episodic memory.
+      </p>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-two-thirds">
+        <figure class="image">
+          <img src="./static/images/EmbodiedAgentRichGraphic.png" alt="Agent loop architecture">
+        </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <h2 class="title is-3">Human vs. Agent Performance</h2>
+    <div class="content has-text-justified">
+      <p>
+        We compare human performance to an embodied agent baseline across varying task difficulty levels. Metrics include:
+        <strong>HAT</strong> (Human Average Time), <strong>HCR%</strong> (Human Completion Rate), <strong>AAT</strong> (Agent Average Time), and <strong>ACR%</strong> (Agent Completion Rate).
+      </p>
+    </div>
+
+    <div class="table-container">
+      <table class="table is-bordered is-striped is-hoverable is-fullwidth">
+        <thead>
+          <tr>
+            <th>Difficulty</th>
+            <th>HAT ↓</th>
+            <th>HCR% ↑</th>
+            <th>AAT ↓</th>
+            <th>ACR% ↑</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Easy-L1</td><td>47</td><td>88.88</td><td>780</td><td>68.63</td></tr>
+          <tr><td>Easy-L2</td><td>73</td><td>100.00</td><td>660</td><td>45.10</td></tr>
+          <tr><td>Easy-L3</td><td>61</td><td>93.33</td><td>420</td><td>33.33</td></tr>
+          <tr><td>Average-L1</td><td>158</td><td>87.50</td><td>-</td><td>-</td></tr>
+          <tr><td>Average-L2</td><td>106</td><td>100.00</td><td>-</td><td>-</td></tr>
+          <tr><td>Average-L3</td><td>84</td><td>100.00</td><td>-</td><td>-</td></tr>
+          <tr><td>Difficult-L1</td><td>76</td><td>100.00</td><td>-</td><td>-</td></tr>
+          <tr><td>Difficult-L2</td><td>136</td><td>100.00</td><td>-</td><td>-</td></tr>
+          <tr><td>Difficult-L3</td><td>113</td><td>100.00</td><td>-</td><td>-</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
 
 
 <section class="section" id="BibTeX">
